@@ -13,14 +13,21 @@ void Wrap (USHORT);
 //#define
 #define classes  5;
 
+// const
+const int studentsperclass = 6;
+
 int main()
 {
     int a=1, b=2; // Defining a,b,c
     cout << "Hello World! \nLine 2 \n"; //This is the first time I've properly coded in ages so lets see
     //taking the sum
     USHORT c = sum(a,b);
+    enum Color {red, green=100, blue};
     int classes_2 = classes
-    cout << "Print Sum: " << c << endl<< "Classes: " << classes_2 << endl;
+    int totalStudents;
+    totalStudents = classes_2*studentsperclass;
+    cout << "Print Sum: " << c << endl<< "Classes: " << classes_2 << endl<< "Total Studnets: "<< totalStudents<< endl;
+    cout << Color(red)<<Color(blue)<<endl;
 
     //Checking the size of various data types
     //DataSize();
