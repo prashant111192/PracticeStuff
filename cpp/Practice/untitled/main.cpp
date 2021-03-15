@@ -1,46 +1,13 @@
 ﻿#include <iostream>
 
+#include "main.hpp"
+
 using namespace std;
 
-// TypdeDef
-typedef unsigned short int USHORT;
-
-//Declarations
-USHORT sum(int, int);
-void DataSize();
-void Wrap(USHORT);
-
-//#define
-#define classes 5;
-
-// const
-const int studentsperclass = 6;
-
-//classes
-class Cat
+inline void Cat::cPrint() const
 {
-    public:
-        Cat(int age);
-        ~Cat();
-        void cPrint() const;
-        void cSetAge(int age);
-
-    private:
-        int cAge;
-};
-
-Cat::Cat(int age)
-{
-    cAge = age;
-}
-
-Cat::~Cat()
-{
-}
-
-void Cat::cPrint() const
-{
-    cout << cAge<< endl << "Hey hay"<< endl;
+    cout << cAge << endl
+         << "Hey hay" << endl;
 }
 
 void Cat::cSetAge(int age)
@@ -48,7 +15,6 @@ void Cat::cSetAge(int age)
     cout << "Setting age :";
     cAge = age;
 }
-
 
 int main()
 {
